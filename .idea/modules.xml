@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Hi_Internet_Kotlin.iml" filepath="$PROJECT_DIR$/.idea/modules/Hi_Internet_Kotlin.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Hi_Internet.iml" filepath="$PROJECT_DIR$/.idea/modules/Hi_Internet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Hi_Internet.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Hi_Internet.app.iml" />
     </modules>
   </component>
 </project>
