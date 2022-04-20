@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hi Internet</string>
+    <string name="nav_open">navigation opens</string>
+    <string name="nav_close">navigation closes</string>
+    <string name="str_api_fail">Sever Exception Occur </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="str_empty_password">Password must not Empty</string>
+    <string name="str_empty_username">User must not empty</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_str_promotion">Promotion</string>
+    <string name="txt_str_our_applicatijon">Our applications</string>
+    <string name="txt_str_hi_internet">Hi-internet</string>
+    <string name="str_login_fail">Login Fail !</string>
+
+
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="str_txt_ned_to_login_first">Please sign in to unlock all \n account features</string>
+    <string name="str_txt_hi_internet">Hi_internet</string>
+    <string name="str_chip_all">All</string>
+    <string name="srt_chip_paid">Paid</string>
+    <string name="str_chip_unpaid">Unpaid</string>
+    <string name="str_txt_log_out_body">Do you want to logout
+        \nthis application?</string>
+    <string name="str_txt_complain_date">Complain Date -</string>
+    <string name="str_txt_loading">Loading...</string>
+    <string name="str_txt_forgetPassword">Forget Password?</string>
+    <string name="str_call_us">Call Us</string>
+    <string name="str_service_issue">Service Issue</string>
+    <string name="str_service_history">Service History</string>
+    <string name="str_login">Login</string>
+    <string name="str_signin">"sign in "</string>
+    <string name="str_lougout">Logout</string>
+    <string name="txt_str_feature">Feature</string>
+
+    <string-array name="langString">
+        <item>ENG</item>
+        <item>မြန်မာ</item>
+    </string-array>
+
+    <string name="str_txt_myComplain">My complain</string>
+    <string name="str_txt_notification">Notification</string>
+    <string name="str_txt_payment">Payment</string>
+    <string name="str_txt_sendComplain">Send Complain</string>
+    <string name="str_my_account">My Account</string>
+    <string name="str_txt_home">Home</string>
+
+    <string name="str_txt_describeProblem">Describe more about your problem</string>
+    <string name="str_btn_send">Send</string>
+
+
+    <string name="str_txt_userID">User ID</string>
+    <string name="str_txt_userName">User ID</string>
+    <string name="str_txt_plan">Plan</string>
+    <string name="str_txt_activationDate">Activation Date</string>
+    <string name="str_txt_accountStatus">Account Status</string>
+    <string name="str_txt_service">Service</string>
+    <string name="str_txt_mobileNo">Mobile No.</string>
+    <string name="str_txt_address">Address</string>
+    <string name="str_txt_logout">Logout</string>
+
+    <string name="str_btn_availablePayment">Available Payment Options</string>
+
+    <string name="str_edt_userName">User Name</string>
+    <string name="str_edt_password">Password</string>
+
+
+    <string name="str_txt_contactAdmin">Please contact to admin for new reset password</string>
+    <string name="str_btn_ok">Ok</string>
+
+    <string name="str_txt_serviceTicket">Service Ticket</string>
+
+    <string name="str_txt_needHelp">need help?</string>
+    <string name="str_txt_phoneNo">Phone (09xxxxxxx)</string>
+
+    <string name="str_account_phoneNo">Phone Number</string>
+    <string name="str_btn_signOut">sign out</string>
+    <string name="str_btn_signInfacebook">sign in with facebook</string>
+
+    <string name="str_txt_noNotification">There is no notifications</string>
+
+    <string name="str_txt_dialog_fail_create_user">Ticket can\'t be created as we are working for your current ticket</string>
+
+
+
+
+</resources>

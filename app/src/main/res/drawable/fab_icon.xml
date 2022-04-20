@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+   <item android:gravity="center">
+
+        <shape android:shape="oval">
+            <solid android:color="@android:color/white" />
+            <size
+                android:width="53dp"
+                android:height="53dp" />
+        </shape>
+    </item>
+    <item
+        android:width="48dp"
+        android:height="48dp"
+        android:gravity="center">
+
+        <bitmap android:src="@drawable/floating_icon" />
+    </item>
+    <item
+        android:width="56dp"
+        android:height="56dp"
+        android:gravity="center">
+
+        <shape android:shape="oval">
+            <stroke
+                android:width="2dp"
+                android:color="@color/background_color" />
+
+        </shape>
+    </item>
+</layer-list>

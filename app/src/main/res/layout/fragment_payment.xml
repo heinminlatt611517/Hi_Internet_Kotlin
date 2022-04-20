@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainBg"
+    app:layout_scrollFlags="exitUntilCollapsed">
+    <!--   <RelativeLayout
+           android:id="@+id/nlayout"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:visibility="visible"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           tools:context=".Fragments.PaymentFragment">-->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/nlayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gredient_bg"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@color/toolbarBackground"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="exitUntilCollapsed">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="start|center"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/circle_bg"
+                    android:padding="16dp"
+                    android:src="@drawable/add_white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/hi_internet_logo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/custom_drawable"
+                    android:drawableRight="@drawable/down"
+                    android:gravity="center"
+                    android:text="EN"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <LinearLayout
+            android:id="@+id/layoutOption"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_below="@+id/appBar"
+            android:background="@color/colorBg"
+            android:gravity="center">
+
+
+            <com.hti.hiinternet.util.ui.HtiButton
+                android:id="@+id/btn_payment_channel"
+                android:layout_width="320dp"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:backgroundTint="@color/mainBg"
+                android:text="Available Payment Options"
+                android:textAllCaps="false"
+                android:textColor="@color/colorBg"
+                app:cornerRadius="24dp"
+                app:icon="@drawable/nav_payment"
+                app:iconGravity="textStart"
+                app:iconTint="@color/colorBg"
+
+                />
+
+        </LinearLayout>
+
+        <com.hti.hiinternet.util.ui.HtiTextView
+            android:id="@+id/tvPayment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layoutOption"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Payment"
+            android:textColor="@color/colorBg"
+            android:textSize="20dp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/layoutChip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPayment"
+            android:gravity="center">
+
+            <com.google.android.material.chip.ChipGroup
+                android:id="@+id/chip_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                app:selectionRequired="true"
+                app:singleLine="false"
+                app:singleSelection="true">
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/btn_all"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:checked="true"
+                    android:text="@string/str_chip_all"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBg"
+                    app:chipBackgroundColor="@drawable/chip_selector"
+                    app:chipStrokeColor="@color/toolbarBackground"
+                    app:chipStrokeWidth="1dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/btn_paid"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:text="@string/srt_chip_paid"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBg"
+                    app:chipBackgroundColor="@drawable/chip_selector"
+                    app:chipStrokeColor="@color/toolbarBackground"
+                    app:chipStrokeWidth="1dp" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/btn_unpaid"
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:text="@string/str_chip_unpaid"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBg"
+                    app:chipBackgroundColor="@drawable/chip_selector"
+                    app:chipStrokeColor="@color/toolbarBackground"
+                    app:chipStrokeWidth="1dp" />
+
+            </com.google.android.material.chip.ChipGroup>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recycler_payment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layoutChip"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp" />
+    </LinearLayout>
+
+    <!--   </RelativeLayout>-->
+
+    <include
+        android:id="@+id/loadingLaoyut"
+        layout="@layout/loadinglayout_payment"
+        android:visibility="gone" />
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

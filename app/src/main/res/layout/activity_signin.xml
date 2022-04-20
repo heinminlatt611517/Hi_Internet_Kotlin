@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="#181f3c"
+    android:layout_height="match_parent">
+
+
+
+    <ProgressBar
+        android:id="@+id/prLoadingView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        />
+
+
+    <ImageView
+        android:id="@+id/iv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/signin_iv"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="20dp"/>
+    <ImageView
+        android:id="@+id/iv2"
+        android:layout_width="wrap_content"
+        android:layout_height="400dp"
+        android:src="@drawable/ic_signin"
+        android:layout_marginTop="12dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+    <EditText
+        android:id="@+id/edt_userName"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:drawableLeft="@drawable/user_ic"
+        android:paddingLeft="24dp"
+        android:hint="@string/str_txt_userID"
+        android:inputType="text"
+        android:textColor="@android:color/white"
+        android:textColorHint="@android:color/white"
+        android:drawableTint="@android:color/white"
+        android:gravity="center"
+        android:paddingRight="100dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/iv2"
+        />
+
+    <EditText
+        android:id="@+id/edt_phoneNo"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/rounded_edittext"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:drawableLeft="@drawable/ic_phone"
+        android:paddingLeft="24dp"
+        android:textColor="@android:color/white"
+        android:hint="@string/str_txt_phoneNo"
+        android:textColorHint="@android:color/white"
+        android:drawableTint="@android:color/white"
+        android:gravity="center"
+        android:inputType="phone"
+        android:paddingRight="100dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_userName"
+        >
+    </EditText>
+
+
+    <TextView
+        android:id="@+id/tv_forgetPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edt_phoneNo"
+        android:layout_marginTop="16dp"
+        android:text="@string/str_txt_needHelp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="120dp"
+        android:layout_height="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_forgetPassword"
+        android:background="@android:color/white" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_signIn"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/tv2"
+        app:cornerRadius="32dp"
+        android:text="@string/str_signin"
+        android:backgroundTint="#ec546c"
+        android:textAllCaps="false"
+        android:textSize="21dp"
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

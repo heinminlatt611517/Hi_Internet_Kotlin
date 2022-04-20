@@ -1,0 +1,361 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    android:id="@+id/normal_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="gone"
+    android:background="@color/mainBg"
+    app:layout_scrollFlags="exitUntilCollapsed">
+    <!--   <RelativeLayout
+           android:id="@+id/nlayout"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:visibility="visible"
+           app:layout_constraintBottom_toBottomOf="parent"
+           app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+           tools:context=".Fragments.PaymentFragment">-->
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/nlayout"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/gredient_bg"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="140dp"
+            android:background="@color/toolbarBackground"
+            android:fitsSystemWindows="true"
+            app:layout_scrollFlags="exitUntilCollapsed">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="start|center"
+                    android:layout_margin="16dp"
+                    android:background="@drawable/circle_bg"
+                    android:padding="16dp"
+                    android:visibility="visible"
+                    android:src="@drawable/add_white"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="75dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/hi_internet_logo"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/custom_drawable"
+                    android:drawableRight="@drawable/down"
+                    android:gravity="center"
+                    android:text="EN"
+                    android:visibility="gone"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/iv_userProfile"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@mipmap/ic_launcher"
+            android:scaleType="centerCrop"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#FF000000"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <TextView
+            android:id="@+id/tv_accountUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="Welcome Daw Gi Gi"
+            style="@style/TextAppearance.AppCompat.Body2"
+            android:layout_marginTop="12dp"
+            android:textColor="@color/color_splash_bg"
+            app:layout_constraintTop_toBottomOf="@+id/iv_userProfile"/>
+
+
+        <LinearLayout
+            android:id="@+id/linearLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_accountUserName"
+            >
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnActive"
+                android:layout_width="65dp"
+                android:layout_height="30dp"
+                android:text="@string/str_btn_active"
+                android:textSize="8sp"
+                app:cornerRadius="8dp"
+                android:textAllCaps="false"
+                app:backgroundTint="@android:color/holo_green_dark"
+                />
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnFtth"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:text="FTTH 50Mbps"
+                android:textSize="8sp"
+                app:cornerRadius="8dp"
+                android:textAllCaps="false"
+                android:layout_marginLeft="6dp"
+                app:backgroundTint="@color/color_splash_bg"
+                />
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cv_Userdata"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@android:color/white"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_margin="16dp"
+            app:cardElevation="2dp"
+            app:cardCornerRadius="12dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="8dp"
+                android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="6dp">
+
+                        <ImageView
+                            android:layout_width="@dimen/account_icon_margin"
+                            android:layout_height="@dimen/account_icon_margin"
+                            android:layout_gravity="center"
+                            android:background="@drawable/circle"
+                            android:padding="8dp"
+                            android:src="@drawable/ic_picture_in_picture_alt_white_24dp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:orientation="vertical"
+                            android:padding="5dp">
+
+                            <com.hti.hiinternet.util.ui.HtiTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:hint="@string/str_txt_userID"
+                                android:textStyle="normal"
+                                />
+
+                            <com.hti.hiinternet.util.ui.HtiTextView
+                                android:id="@+id/txt_user_id"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="00000001"
+                                android:textStyle="normal" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="6dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/account_icon_margin"
+                        android:layout_height="@dimen/account_icon_margin"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_local_phone_black_24dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <com.hti.hiinternet.util.ui.HtiTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:hint="@string/str_account_phoneNo" />
+
+                        <com.hti.hiinternet.util.ui.HtiTextView
+                            android:id="@+id/txt_phone"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00000001"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="6dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/account_icon_margin"
+                        android:layout_height="@dimen/account_icon_margin"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_picture_in_picture_alt_white_24dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <com.hti.hiinternet.util.ui.HtiTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textStyle="normal"
+                            android:hint="@string/str_txt_activationDate" />
+
+                        <com.hti.hiinternet.util.ui.HtiTextView
+                            android:id="@+id/txt_activation_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="00000001"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:padding="6dp">
+
+                    <ImageView
+                        android:layout_width="@dimen/account_icon_margin"
+                        android:layout_height="@dimen/account_icon_margin"
+                        android:layout_gravity="center"
+                        android:background="@drawable/circle"
+                        android:padding="8dp"
+                        android:src="@drawable/ic_location_on_white_24dp" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical"
+                        android:padding="5dp">
+
+                        <com.hti.hiinternet.util.ui.HtiTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:hint="@string/str_txt_address"
+                            android:textStyle="normal"/>
+
+                        <com.hti.hiinternet.util.ui.HtiTextView
+                            android:id="@+id/txt_address"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Yangon"
+                           android:textStyle="normal" />
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btn_signOut"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="32dp"
+            android:paddingLeft="56dp"
+            android:paddingRight="56dp"
+            android:text="@string/str_btn_signOut"
+            android:textAllCaps="false"
+            android:textColor="@color/color_splash_bg"
+            android:backgroundTint="@android:color/white"
+            app:cornerRadius="20dp"
+            app:elevation="0dp"
+            android:elevation="0dp"
+            app:strokeColor="@color/color_splash_bg"
+            app:strokeWidth="1dp"
+            android:foreground="?attr/selectableItemBackground"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv_Userdata"/>
+
+
+        <ImageView
+            android:id="@+id/iv_signOut"
+            android:layout_width="28dp"
+            android:elevation="10dp"
+            android:layout_height="28dp"
+            android:src="@drawable/ic_logout"
+            app:layout_constraintStart_toStartOf="@+id/btn_signOut"
+            app:layout_constraintTop_toTopOf="@id/btn_signOut"
+            app:layout_constraintBottom_toBottomOf="@id/btn_signOut"
+            android:layout_marginLeft="14dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    <include
+        android:id="@+id/loading_Laoyut"
+        layout="@layout/loadinglayout_myaccount" />
+
+</FrameLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    app:cardCornerRadius="0dp"
+    app:cardElevation="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="8dp"
+        android:paddingTop="16dp"
+
+        android:paddingRight="8dp">
+
+        <ImageView
+            android:id="@+id/ivNotiImage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/item_noit_backgournd"
+            android:padding="10dp"
+            android:src="@drawable/notification_icon"
+            android:tint="@color/colorPrimary"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <TextView
+            android:id="@+id/tvNotititle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+
+            android:layout_marginEnd="8dp"
+            android:text="Application update avaliable"
+            app:layout_constraintEnd_toStartOf="@+id/notiTime"
+            app:layout_constraintStart_toEndOf="@+id/ivNotiImage"
+            app:layout_constraintTop_toTopOf="@+id/ivNotiImage" />
+
+        <TextView
+            android:id="@+id/tvNotiInfo"
+            style="@style/TextAppearance.AppCompat.Small"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="hi internet new version avaliable please download "
+            android:textColor="@color/text_color_grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvNotititle"
+            app:layout_constraintTop_toBottomOf="@+id/tvNotititle" />
+
+        <TextView
+            android:id="@+id/notiTime"
+            style="@style/TextAppearance.Compat.Notification.Time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12/02/09"
+            android:textColor="@color/gray"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvNotititle"></TextView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="8dp"
+            android:background="@color/background_color"
+            app:layout_constraintEnd_toEndOf="@+id/tvNotiInfo"
+            app:layout_constraintStart_toStartOf="@+id/tvNotiInfo"
+            app:layout_constraintTop_toBottomOf="@+id/tvNotiInfo" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@android:color/transparent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:background="@drawable/bg_sign_background"
+        android:paddingTop="16dp"
+        android:paddingBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ProgressBar
+            android:id="@+id/prLoadingView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            app:layout_constraintTop_toTopOf="@id/btSignIn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/btSignIn"
+            />
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:padding="18dp"
+            android:src="@drawable/ic_close_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:id="@+id/iv_userProfile"-->
+<!--            android:layout_width="96dp"-->
+<!--            android:layout_height="96dp"-->
+<!--            android:src="@mipmap/ic_launcher"-->
+<!--            android:scaleType="centerCrop"-->
+<!--            app:civ_border_width="2dp"-->
+<!--            app:civ_border_color="#FF000000"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/imageView4"></de.hdodenhof.circleimageview.CircleImageView>-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/tv_userName"-->
+<!--            style="@style/TextAppearance.AppCompat.Headline"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:text="@string/str_login"-->
+<!--            android:textColor="@color/color_splash_bg"-->
+<!--            android:textStyle="bold"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/iv_userProfile" />-->
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="32dp"
+            android:alpha="0.8"
+            android:text="@string/str_txt_ned_to_login_first"
+            android:textAlignment="center"
+            android:textColor="@color/color_splash_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4"
+             />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_marginTop="20dp"
+            android:paddingLeft="56dp"
+            android:paddingRight="56dp"
+            android:text="@string/str_signin"
+            app:backgroundTint="@color/color_splash_bg"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/ic_logout"
+            app:iconSize="30dp"
+            app:iconTintMode="add"
+            android:textAllCaps="false"
+            app:rippleColor="@color/color_splash_bg"
+            app:iconTint="@color/color_splash_bg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_userName"
+            style="@style/Widget.MaterialComponents.Button.Icon"/>
+
+        <EditText
+            android:id="@+id/edt_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="@string/str_txt_userID"
+            android:maxLines="1"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:singleLine="true"
+            android:gravity="center"
+            android:layout_marginTop="18dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <TextView
+            android:id="@+id/tv_errorMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Error"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="10sp"
+            android:visibility="gone"
+            app:layout_constraintTop_toBottomOf="@id/btSignIn"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_needHelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_errorMessage"
+            android:layout_marginTop="16dp"
+            android:textSize="12sp"
+            android:text="@string/str_txt_needHelp"
+            android:textColor="@color/color_splash_bg"/>
+
+<!--        <ImageView-->
+<!--            android:layout_width="30dp"-->
+<!--            android:layout_height="30dp"-->
+<!--            android:src="@drawable/ic_logout"-->
+<!--            app:layout_constraintStart_toStartOf="@id/btSignIn"-->
+<!--            app:layout_constraintTop_toTopOf="@id/btSignIn"-->
+<!--            app:layout_constraintBottom_toBottomOf="@id/btSignIn"-->
+<!--            android:layout_marginLeft="20dp"-->
+<!--            />-->
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="75dp"
+            android:layout_height="1dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="4dp"
+            app:layout_constraintTop_toBottomOf="@+id/tv_needHelp"
+            android:background="@color/color_splash_bg" />
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="110dp"
+            android:layout_height="1dp"
+            android:visibility="gone"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edt_userName"
+            android:background="@color/gray"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

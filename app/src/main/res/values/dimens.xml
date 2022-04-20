@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="nav_height">200dp</dimen>
+    <dimen name="nav_header_user_size">60dp</dimen>
+    <dimen name="toolbar_double_height">112dp</dimen>
+    <dimen name="cardview_toolbar_spacer">10dp</dimen>
+    <dimen name="card_view_height">140dp</dimen>
+    <dimen name="tab_spacing_half">5dp</dimen>
+    <dimen name="tab_spacing_left">22dp</dimen>
+    <dimen name="tab_spacing_right">22dp</dimen>
+    <dimen name="h_promotion_item">156dp</dimen>
+    <dimen name="h_top_promotion">176dp</dimen>
+    <dimen name="h_our_app">112dp</dimen>
+    <dimen name="w_our_app">296dp</dimen>
+    <dimen name="account_icon_margin">48dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+</resources>

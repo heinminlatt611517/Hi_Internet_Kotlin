@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<com.google.android.material.card.MaterialCardView-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        android:id="@+id/card_noti"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginLeft="20dp"-->
+<!--        android:layout_marginRight="20dp"-->
+<!--        android:layout_marginTop="80dp"-->
+<!--        android:layout_marginBottom="10dp"-->
+<!--        app:cardCornerRadius="20dp"-->
+<!--        app:cardBackgroundColor="@color/card_view_background"-->
+<!--        >-->
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@android:color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+<LinearLayout
+    android:background="@drawable/login_dialog_bg"
+    android:layout_width="match_parent"
+    android:layout_height="156dp"
+    android:padding="15dp"
+    android:orientation="vertical"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+            <com.hti.hiinternet.util.ui.HtiTextView
+                android:id="@+id/dialog_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/str_txt_hi_internet"
+                android:layout_marginBottom="10dp"
+                style="@style/TextAppearance.MaterialComponents.Headline6"/>
+
+            <com.hti.hiinternet.util.ui.HtiTextView
+                android:id="@+id/dialog_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/str_txt_ned_to_login_first"
+                style="@style/TextAppearance.MaterialComponents.Body1"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+            <com.hti.hiinternet.util.ui.HtiButton
+                android:id="@+id/btn_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="NO"
+                android:layout_marginRight="4dp"
+                android:textColor="@android:color/white"
+                />
+                <com.hti.hiinternet.util.ui.HtiButton
+                    android:id="@+id/btn_go_to_login"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="GO TO LOGIN"
+                    android:layout_marginLeft="4dp"
+                    android:background="#203BFF"
+                    android:textColor="@android:color/white"
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--    </com.google.android.material.card.MaterialCardView>-->

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1051022873691",
+    "firebase_url": "https://hticlient.firebaseio.com",
+    "project_id": "hticlient",
+    "storage_bucket": "hticlient.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1051022873691:android:ab666c75e8ff2cbcaf9b7e",
+        "android_client_info": {
+          "package_name": "com.hti.hiinternet"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1051022873691-vs9p3j6j4koe74v4ndcabo0ucfql4te6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCdP6EsSbivVtUHpQ7SDH9qBGRPk59FCQA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1051022873691-vs9p3j6j4koe74v4ndcabo0ucfql4te6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

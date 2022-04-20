@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Hi Internet</string>
+    <string name="nav_open">navigation opens</string>
+    <string name="nav_close">navigation closes</string>
+    <string name="str_api_fail">Sever Exception Occur </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="str_empty_password">Password must not Empty</string>
+    <string name="str_empty_username">User must not empty</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="txt_str_promotion">အထူးလျှော့ဈေးများ</string>
+    <string name="txt_str_our_applicatijon">ကျွန်ုပ်တို့၏ အက်ပလီကေးရှင်းများ</string>
+    <string name="txt_str_hi_internet">Hi-internet</string>
+    <string name="str_login_fail">Login Fail !</string>
+
+
+    <string name="title_activity_splash_screen">SplashScreen</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+    <string name="str_txt_ned_to_login_first">ဤfeature သုံးရန် သင့်အကောင့်ဖြင့်\n၀င်ရန်လိုပါသည်။</string>
+    <string name="str_txt_hi_internet">Hi_internet</string>
+
+    <string name="str_txt_log_out_body">အက်ပလီကေးရှင်းမှ ထွက်ရန်\nသေချာပါသလား?</string>
+    <string name="str_txt_complain_date">Complain Date -</string>
+    <string name="str_txt_loading">Loading...</string>
+    <string name="str_txt_forgetPassword">လှို့ဝှက်နံပတ် မေ့နေပါသလား?</string>
+
+    <string name="str_login">ဝင်ရောက်ရန်</string>
+    <string name="str_signin">အကောင့်ဝင်ရန်</string>
+    <string name="str_lougout">ထွက်ရန်</string>
+    <string name="txt_str_feature">Feature</string>
+
+    <string-array name="langString">
+        <item>အဂ်လိပ်</item>
+        <item>မြန်မာ</item>
+        <item>ဇော်ဂျီ</item>
+    </string-array>
+
+
+    <string name="str_txt_myComplain">တိုင်ကြားစာများ</string>
+    <string name="str_txt_notification">အသိပေးချက်</string>
+    <string name="str_txt_payment">ငွေပေးချေမှု</string>
+    <string name="str_txt_sendComplain">တိုင်ကြားစာများပေးပို့ရန်</string>
+    <string name="str_my_account">ကျွန်ုပ်အကောင့်</string>
+    <string name="str_txt_home">ပင်မစာမျက်နှာ</string>
+
+
+    <string name="str_call_us">ဆက်သွယ်ရန်</string>
+    <string name="str_service_issue">ဝန်ဆောင်မှုအခက်အခဲများ</string>
+    <string name="str_service_history">လုပ်ဆောင်မှုမှတ်တမ်းများ</string>
+
+    <string name="str_txt_describeProblem">လူကြီးမင်း၏အခက်အခဲကိုအသေးစိတ်ဖော်ပြရန်။</string>
+
+    <string name="str_btn_send">ပေးပို့ရန်</string>
+
+
+    <string name="str_txt_userID">သုံးစွဲသူ ID</string>
+    <string name="str_txt_userName">သုံးစွဲသူ အမည်</string>
+    <string name="str_txt_plan">ဝယ်ယူထားသည့် ဒေတာအမျိုးအစား</string>
+    <string name="str_txt_activationDate">စတင်အသုံးပြုသည့်နေ့စွဲ</string>
+    <string name="str_txt_accountStatus">အကောင့် အခြေအနေ</string>
+    <string name="str_txt_service">ဝန်ဆောင်မှု</string>
+    <string name="str_txt_mobileNo">ဆက်သွယ်ရန်ဖုန်းနံပတ်</string>
+    <string name="str_txt_address">နေရပ်လိပ်စာ</string>
+    <string name="str_txt_logout">အကောင့်မှထွက်ရန်</string>
+
+    <string name="str_chip_all">အားလုံး</string>
+    <string name="srt_chip_paid">ပေးချေပြီး</string>
+    <string name="str_chip_unpaid">ပေးချေရန်</string>
+
+
+    <string name="str_btn_availablePayment">ငွေပေးချေခြင်း ဝန်ဆောင်မှုများ</string>
+
+    <string name="str_edt_userName">သုံးစွဲသူ အမည်</string>
+    <string name="str_edt_password">လှို့ဝှက် နံပတ်</string>
+
+    <string name="str_txt_contactAdmin">လှို့ဝှက်နံပတ် ပြန်လည် ပြောင်းလဲရန် သက်ဆိုင်ရာသို့ဆက်သွယ်ပါ</string>
+    <string name="str_btn_ok">ဆက်သွယ်မည်</string>
+
+    <string name="str_txt_serviceTicket">၀န်ဆောင်မှုလက်မှတ်</string>
+
+    <string name="str_txt_needHelp">အကူအညီလိုအပ်ပါသလား?</string>
+
+    <string name="str_txt_phoneNo">Phone (09xxxxxxx)</string>
+
+    <string name="str_txt_dialog_fail_create_user">လက်ရှိ ticket အားလုပ်​ဆောင်​နေ​​​ဆဲဖြစ်​သော​ကြောင့် အသစ်ထပ်မံဖွင့်လှစ်၍မရနိုင်ပါ</string>
+
+
+</resources>

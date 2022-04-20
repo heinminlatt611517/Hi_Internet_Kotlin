@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/frDimBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_accend_transparent"
+        android:elevation="12dp"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="58dp">
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <include
+            android:visibility="gone"
+            android:id="@+id/homeMenu"
+            layout="@layout/viewhome_sub_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="56dp" />
+        <com.hti.hiinternet.util.ui.HtiTextView
+            android:id="@+id/txt_call_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="256dp"
+            android:layout_toRightOf="@+id/fab_call_center"
+            android:padding="8dp"
+            android:text="Call Center"
+            android:textColor="@color/fab_txt_color"
+            android:visibility="gone" />
+
+        <com.hti.hiinternet.util.ui.HtiTextView
+            android:id="@+id/txt_send_complain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="186dp"
+            android:layout_toRightOf="@+id/fab_send_complain"
+            android:padding="8dp"
+            android:text="Send Complain"
+            android:textColor="@color/fab_txt_color"
+            android:visibility="invisible" />
+
+        <com.hti.hiinternet.util.ui.HtiTextView
+            android:id="@+id/txt_my_complain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="116dp"
+            android:layout_toRightOf="@+id/fab_my_complain"
+            android:padding="8dp"
+            android:text="My Complain"
+            android:textColor="@color/fab_txt_color"
+            android:visibility="invisible" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_call_center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="246dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:backgroundTint="@color/fab_icon_background"
+            android:clickable="true"
+            android:elevation="0dp"
+            android:focusable="true"
+            android:visibility="invisible"
+            app:elevation="0dp"
+            app:pressedTranslationZ="12dp"
+            app:srcCompat="@drawable/phone_icon" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_my_complain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="106dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:elevation="16dp"
+            android:focusable="true"
+            android:visibility="gone"
+            app:backgroundTint="@color/fab_icon_background"
+            app:pressedTranslationZ="12dp"
+            app:srcCompat="@drawable/icon_complain" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/fab_send_complain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="176dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:elevation="16dp"
+            android:focusable="true"
+            android:visibility="gone"
+            app:backgroundTint="@color/fab_icon_background"
+            app:elevation="16dp"
+            app:pressedTranslationZ="12dp"
+            app:srcCompat="@drawable/icon_message" />
+
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom"
+        android:background="@color/background_color"
+        android:clipChildren="false"
+        app:labelVisibilityMode="labeled"
+        app:layout_anchorGravity="start|bottom"
+        app:menu="@menu/menu" />
+
+    <ImageView
+        android:id="@+id/fab_main"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="bottom|center"
+        android:layout_marginStart="15dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="15dp"
+        android:background="@android:color/transparent"
+        android:clickable="true"
+        android:elevation="16dp"
+        android:src="@drawable/fab_icon"
+        android:visibility="visible"
+        app:borderWidth="0dp"
+        app:elevation="8dp"
+        app:fabCradleMargin="36dp"
+        app:fabCradleRoundedCornerRadius="38dp"
+        app:fabSize="normal"
+        app:layout_anchor="@+id/navigation"
+        app:layout_anchorGravity="center"
+        app:maxImageSize="56dp" />
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
